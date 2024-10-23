@@ -4,16 +4,11 @@
 
   vars:
     controller_postinstall_repo_url: https://github.com/ansible/product-demos-postinstall.git
-    controller_poistinstall_repo_ref: main
+    controller_postinstall_repo_ref: main
     controller_postinstall_dir: '{{ playbook_dir }}/product-demos-postinstall'
     controller_postinstall_ignore_files: []
 
   tasks:
-    - name: Ensure the git binary is available
-      ansible.builtin.package:
-        name: git-core
-      become: true
-
     - name: Check out product-demos-postinstall repo
       ansible.builtin.git:
         repo: '{{ controller_postinstall_repo_url }}'
