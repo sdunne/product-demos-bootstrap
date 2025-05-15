@@ -38,7 +38,6 @@ Presumably you have already completed this step before arriving here, however yo
 3. Click the magnifying glass on the **Credentials** field, change the dropdown in the top right to `Red Hat Ansible Automation Platform` and select `Controller Credential` from the list.
 4. Optional variables:
    - To use an alternate branch in the Product Demos repo, define the extra variable `apd_git_repo_branch: <your-branch>`
-   - To use the Ansible Automation Platform 2.5 Execution environment, define the extra variable `apd_ee_image_version: 25`
 6. Save the job template and click **Launch**
 
 ### Step 5 - Launch the SETUP Job
