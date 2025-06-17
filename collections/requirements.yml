@@ -1,6 +1,7 @@
 ---
 collections:
   - name: awx.awx
+    src: https://github.com/ansible/awx
     version: 24.6.1
   - name: infra.controller_configuration
     version: 2.10.3
